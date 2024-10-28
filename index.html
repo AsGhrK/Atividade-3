@@ -21,5 +21,18 @@
     <input type="text" id="item-input" placeholder="Novo item">
     <button id="add-item">Adicionar Item</button>
     <ul id="item-list"></ul>
+
+    <script>
+        document.getElementById('add-item').onclick = function() {
+            const itemInput = document.getElementById('item-input');
+            const newItem = itemInput.value;
+            if (newItem) {
+                const li = document.createElement('li');
+                li.textContent = newItem;
+                document.getElementById('item-list').appendChild(li);
+                itemInput.value = '';
+            }
+        };
+    </script>
 </body>
 </html>
