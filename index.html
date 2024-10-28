@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exemplo de Funcionalidade</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #item-list { margin-top: 20px; }
+    </style>
 </head>
 <body>
-    
+    <h1>Formulário de Contato</h1>
+    <form id="contact-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" required>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Lista de Itens</h2>
+    <input type="text" id="item-input" placeholder="Novo item">
+    <button id="">Adicionar Item</button>
+    <ul id="item-list"></ul>
 </body>
 </html>
